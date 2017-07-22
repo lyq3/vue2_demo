@@ -2,7 +2,7 @@
   <div class="hello">
     <el-row>
   <el-col :span="24"><div class="block">
-  <span class="demonstration">默认显示颜色</span>
+  <span class="demonstration">搜索：</span>
   <span class="wrapper">
     <el-button type="success">成功按钮</el-button>
     <el-button type="warning">警告按钮</el-button>
@@ -12,27 +12,17 @@
 </div></el-col>
 </el-row>
 <el-row>
-  <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="4" ><div class="grid-content"></div></el-col>
+  <el-col :span="16"><el-input
+  placeholder="请输入内容"
+  icon="search"
+  v-model="input2"
+  :on-icon-click="handleIconClick">
+</el-input></el-col>
+<el-col :span="4" ></el-col>
 </el-row>
 <el-row>
-  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
-  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
-</el-row>
-<el-row>
-  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-</el-row>
-<el-row>
-  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  <!-- <el-col :span="24"><div class="grid-content bg-purple"></div></el-col> -->
 </el-row>
   </div>
 </template>
