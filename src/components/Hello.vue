@@ -4,10 +4,10 @@
   <el-col :span="24"><div class="block">
   <span class="demonstration">搜索：</span>
   <span class="wrapper">
-    <el-button type="success">成功按钮</el-button>
-    <el-button type="warning">警告按钮</el-button>
-    <el-button type="danger">危险按钮</el-button>
-    <el-button type="info">信息按钮</el-button>
+    <el-button type="success">种子资源</el-button>
+    <el-button type="warning">电影资源</el-button>
+    <el-button type="danger">唯美写真</el-button>
+    <el-button type="info">书籍资源</el-button>
   </span>
 </div></el-col>
 </el-row>
@@ -22,6 +22,13 @@
 <el-col :span="4" ></el-col>
 </el-row>
 <el-row>
+  <el-col :span="12">
+  <el-radio-group v-model="radio2">
+    <el-radio :label="3">苍老师</el-radio>
+    <el-radio :label="6">小泽玛利亚</el-radio>
+    <el-radio :label="9">波多野结衣</el-radio>
+  </el-radio-group>
+</el-col>
   <!-- <el-col :span="24"><div class="grid-content bg-purple"></div></el-col> -->
 </el-row>
   </div>
